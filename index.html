@@ -5,8 +5,135 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="page-header">
+      <img class="page-header__logo" src="#" alt=" 'City of Sedona' ">
+      <nav class="page-header__navigation">
+        <ul class="page-header__list">
+          <li class="page-header__item">
+            <a class="page-header__nav-link  page-header__nav-link--active  button" href="#">Главная</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__nav-link  button" href="#">Фото и Видео</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__nav-link  button" href="#">Форма отзыва</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__nav-link  button" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="page-header__content  header__content">
+        <img src="#" alt="Welcome to the gorgeous SEDONA! 'Because the Grand Canyon lucks!' ">
+      </section>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<!--   Не стал выносить для кнопки бургера/закрытия отдельный спан, думаю, можно это реализовать и через псевдо-элементы.
+       Посчитал, что текст на фоновой картинке - изображение контентное, добавил в разметку.   -->
+
+    <main class="index-main">
+      <section class="index-main__intro">
+        <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </section>
+      <div class="wrapper">
+        <section class="index-main__content">
+          <div class="wrapper">
+            <div class="index-main__reason  main__reason--first">
+              <h2 class="index-main__subtitle">Настоящий городок</h2>
+              <span class="index-main__number">№1</span>
+              <p class="index-main__subtext">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <div class="container">
+              <img class="index-main__image  main__image--first" src="#" alt="#">
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="index-main__reason  main__reason--second">
+              <h2 class="index-main__subtitle">Жилье</h2>
+              <p class="index-main__subtext">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
+            <div class="index-main__reason  main__reason--second">
+              <h2 class="index-main__subtitle">Сувениры</h2>
+              <p class="index-main__subtext">Не только китайского, но и местного производства!</p>
+            </div>
+            <div class="index-main__reason  main__reason--second">
+              <h2 class="index-main__subtitle">Еда</h2>
+              <p class="index-main__subtext">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="wrapper">
+        <section class="index-main__content">
+          <div class="wrapper">
+            <div class="index-main__reason  main__reason--first">
+              <h2 class="index-main__subtitle">Там есть мост дьявола</h2>
+              <span class="index-main__number">№2</span>
+              <p class="index-main__subtext">Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
+            </div>
+            <div class="container">
+              <img class="index-main__image  main__image--second" src="#" alt="#">
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="index-main__reason  main__reason--third">
+              <h2 class="index-main__subtitle">Небольшая площадь</h2>
+              <span class="index-main__number">№3</span>
+              <p class="index-main__subtext">Все интересные места находятся очень близко</p>
+            </div>
+            <div class="index-main__reason  main__reason--third">
+              <h2 class="index-main__subtitle">Красивая дорога</h2>
+              <span class="index-main__number">№4</span>
+              <p class="index-main__subtext">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="index-main__reason  main__reason--third">
+              <h2 class="index-main__subtitle">Мало туристов</h2>
+              <span class="index-main__number">№5</span>
+              <p class="index-main__subtext">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </div>
+        </section>
+        <section class="index-main__write">
+          <b class="index-main__title">Заинтересовались?</b>
+          <p class="index-main__text">Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+          <a class="button" href="#">Найти гостиницу</a>
+        </section>
+        <section class="index-main__map">
+          <iframe src="#" frameborder="0"></iframe>
+        </section>
+      </div>
+    </main>
+
+<!--   Добавил лишних обёрток в main__content, потому что помню макет для пк-версии.
+       Не уверен особо в том, что должны образом подбираю классы. Я по БЭМу верстал, но не так, как здесь учат.
+       Не стеснялся вложенностей из элементов-элементов, то есть.   -->
+
+    <footer class="page-footer">
+      <ul class="page-footer__wrapper">
+        <li class="page-footer__container">
+          <b class="page-footer__bold">#visitsedona</b>
+        </li>
+        <li class="page-footer__container">
+          <ul class="page-footer__socials  socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#">Twitter</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">Facebook</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">Youtube</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page-footer__container">
+          <a class="page-footer__link" href="#">Разработано HTMLAcademy</a>
+        </li>
+      </ul>
+    </footer>
+
+<!--   Списками редко размечаю, но вроде как семантично, так что вот.   -->
 
   </body>
 </html>
