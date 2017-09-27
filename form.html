@@ -27,7 +27,56 @@
       </section>
     </header>
     <main class="form-main">
-
+      <section class="form-main__intro">
+        <b class="form-main__main-subtitle">Оставьте свой отзыв</b>
+        <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопримечательностях</p>
+      </section>
+      <section class="form-main__content">
+        <form class="form-main__form  form" action="https://echo.htmlacademy.ru" method="post" name="write-back-form">
+          <div class="form__introduce  introduce">
+            <b class="introduce__title">Представьтесь:</b>
+            <label for="name">Имя*:</label>
+            <input class="introduce__name" id="name" type="text" name="name">
+            <label for="family-name">Имя*:</label>
+            <input class="introduce__family-name" id="family-name" type="text" name="family-name">
+            <label for="last-name">Имя*:</label>
+            <input class="introduce__last-name" id="last-name" type="text" name="last-name">
+          </div>
+          <div class="form__contacts  contacts">
+            <b class="contacts__title">Контактная информация:</b>
+            <label for="tel">Имя*:</label>
+            <input class="contacts__tel" id="tel" type="tel" name="tel" placeholder="Введите телефон">
+            <label for="email">Имя*:</label>
+            <input class="contacts__email" id="email" type="email" name="email" placeholder="Введите e-mail">
+          </div>
+          <div class="form__impression  impression">
+            <b class="impression__title">Ваше общее впечатление:</b>
+            <label for="impression-1">Скорее положительное</label>
+            <input class="impression__radio  impression__radio__first" id="impression-1" type="radio" name="impression" value="1">
+            <label for="impression-2">Скорее отрицательное</label>
+            <input class="impression__radio  impression__radio__second" id="impression-2" type="radio" name="impression" value="2">
+            <label for="impression-3">Затрудняюсь ответить</label>
+            <input class="impression__radio  impression__radio__third" id="impression-3" type="radio" name="impression" value="3">
+          </div>
+          <div class="form__checkout  checkout">
+            <b class="checkout__title">Посещенные достопримечательности:</b>
+            <label for="checkout-1">Моста Дьявола</label>
+            <input class="checkout__checkbox  checkout__checkbox--first" id="checkout-1" type="checkbox" name="checkout" value="1">
+            <label for="checkout-2">Слайд-парк</label>
+            <input class="checkout__checkbox  checkout__checkbox--second" id="checkout-2" type="checkbox" name="checkout" value="2">
+            <label for="checkout-3">Гора-Колокол</label>
+            <input class="checkout__checkbox  checkout__checkbox--third" id="checkout-3" type="checkbox" name="checkout" value="3">
+            <label for="checkout-4">Красные скалы</label>
+            <input class="checkout__checkbox  checkout__checkbox--fourth" id="checkout-4" type="checkbox" name="checkout" value="4">
+          </div>
+          <div class="form__comments  comments">
+            <b class="comments__title">Опишите свои эмоции:</b>
+            <textarea name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
+          <label for="submit">Отправить отзыв</label>
+          <input class="form__submit-button" id="submit" type="submit" name="submit" value="Отправить отзыв">
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <ul class="page-footer__wrapper">
