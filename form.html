@@ -5,8 +5,11 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__logo" src="#" alt=" 'City of Sedona' ">
+      <a href="#" class="page-header__logo  logo">
+        <img class="logo__item" src="#" alt=" 'City of Sedona' ">
+      </a>
       <nav class="page-header__navigation">
+        <button type="button" class="page-header__burger-button"></button>
         <ul class="page-header__list">
           <li class="page-header__item">
             <a class="page-header__nav-link  button" href="#">Главная</a>
@@ -22,7 +25,7 @@
           </li>
         </ul>
       </nav>
-      <section class="page-header__content  header__content  header__content--less">
+      <section class="page-header__content page-header__content--less">
         <img src="#" alt=" 'SEDONA' ">
       </section>
     </header>
@@ -35,71 +38,94 @@
         <form class="form-main__form  form" action="https://echo.htmlacademy.ru" method="post" name="write-back-form">
           <div class="form__introduce  introduce">
             <b class="introduce__title">Представьтесь:</b>
-            <label for="name">Имя*:</label>
-            <input class="introduce__name" id="name" type="text" name="name">
-            <label for="family-name">Имя*:</label>
-            <input class="introduce__family-name" id="family-name" type="text" name="family-name">
-            <label for="last-name">Имя*:</label>
-            <input class="introduce__last-name" id="last-name" type="text" name="last-name">
+            <div class="introduce__name">
+              <label for="name">Имя*:</label>
+              <input id="name" type="text" name="name">
+            </div>
+            <div class="introduce__family-name">
+              <label for="family-name">Фамилия*:</label>
+              <input id="family-name" type="text" name="family-name">
+            </div>
+            <div class="introduce__last-name">
+              <label for="last-name">Отчество:</label>
+              <input id="last-name" type="text" name="last-name">
+            </div>
           </div>
           <div class="form__contacts  contacts">
             <b class="contacts__title">Контактная информация:</b>
-            <label for="tel">Имя*:</label>
-            <input class="contacts__tel" id="tel" type="tel" name="tel" placeholder="Введите телефон">
-            <label for="email">Имя*:</label>
-            <input class="contacts__email" id="email" type="email" name="email" placeholder="Введите e-mail">
+            <div class="contacts__tel">
+              <label for="tel">Контактный телефон*:</label>
+              <input id="tel" type="tel" name="tel" placeholder="Введите телефон">
+            </div>
+            <div class="contacts__email">
+              <label for="email">Электронная почта*:</label>
+              <input id="email" type="email" name="email" placeholder="Введите e-mail">
+            </div>
           </div>
           <div class="form__impression  impression">
             <b class="impression__title">Ваше общее впечатление:</b>
-            <label for="impression-1">Скорее положительное</label>
-            <input class="impression__radio  impression__radio__first" id="impression-1" type="radio" name="impression" value="1">
-            <label for="impression-2">Скорее отрицательное</label>
-            <input class="impression__radio  impression__radio__second" id="impression-2" type="radio" name="impression" value="2">
-            <label for="impression-3">Затрудняюсь ответить</label>
-            <input class="impression__radio  impression__radio__third" id="impression-3" type="radio" name="impression" value="3">
+            <div class="impression__radio  impression__radio__first">
+              <input id="impression-1" type="radio" name="impression" value="1">
+              <label for="impression-1">Скорее положительное</label>
+            </div>
+            <div class="impression__radio  impression__radio__second">
+              <input id="impression-2" type="radio" name="impression" value="2">
+              <label for="impression-2">Скорее отрицательное</label>
+            </div>
+            <div class="impression__radio  impression__radio__third">
+              <input id="impression-3" type="radio" name="impression" value="3">
+              <label for="impression-3">Затрудняюсь ответить</label>
+            </div>
           </div>
           <div class="form__checkout  checkout">
             <b class="checkout__title">Посещенные достопримечательности:</b>
-            <label for="checkout-1">Моста Дьявола</label>
-            <input class="checkout__checkbox  checkout__checkbox--first" id="checkout-1" type="checkbox" name="checkout" value="1">
-            <label for="checkout-2">Слайд-парк</label>
-            <input class="checkout__checkbox  checkout__checkbox--second" id="checkout-2" type="checkbox" name="checkout" value="2">
-            <label for="checkout-3">Гора-Колокол</label>
-            <input class="checkout__checkbox  checkout__checkbox--third" id="checkout-3" type="checkbox" name="checkout" value="3">
-            <label for="checkout-4">Красные скалы</label>
-            <input class="checkout__checkbox  checkout__checkbox--fourth" id="checkout-4" type="checkbox" name="checkout" value="4">
+            <div class="checkout__checkbox  checkout__checkbox--first">
+              <input id="checkout-1" type="checkbox" name="checkout" value="1">
+              <label for="checkout-1">Моста Дьявола</label>
+            </div>
+            <div class="checkout__checkbox  checkout__checkbox--second">
+              <input id="checkout-2" type="checkbox" name="checkout" value="2">
+              <label for="checkout-2">Слайд-парк</label>
+            </div>
+            <div class="checkout__checkbox  checkout__checkbox--third">
+              <input id="checkout-3" type="checkbox" name="checkout" value="3">
+              <label for="checkout-3">Гора-Колокол</label>
+            </div>
+            <div class="checkout__checkbox  checkout__checkbox--fourth">
+              <input id="checkout-4" type="checkbox" name="checkout" value="4">
+              <label for="checkout-4">Красные скалы</label>
+            </div>
           </div>
           <div class="form__comments  comments">
             <b class="comments__title">Опишите свои эмоции:</b>
             <textarea name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
-          <label for="submit">Отправить отзыв</label>
-          <input class="form__submit-button" id="submit" type="submit" name="submit" value="Отправить отзыв">
+          <div class="form__submit-button" >
+            <button type="submit" name="submit">Отправить отзыв</button>
+          </div>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <ul class="page-footer__wrapper">
-        <li class="page-footer__container">
-          <b class="page-footer__bold">#visitsedona</b>
-        </li>
-        <li class="page-footer__container">
-          <ul class="page-footer__socials  socials">
-            <li class="socials__item">
-              <a class="socials__link" href="#">Twitter</a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#">Facebook</a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#">Youtube</a>
-            </li>
-          </ul>
-        </li>
-        <li class="page-footer__container">
-          <a class="page-footer__link" href="#">Разработано HTMLAcademy</a>
-        </li>
-      </ul>
+      <div class="page-footer__container">
+        <b class="page-footer__bold">#visitsedona</b>
+      </div>
+      <div class="page-footer__container">
+        <ul class="page-footer__socials  socials">
+          <li class="socials__item">
+            <a class="socials__link" href="#">Twitter</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">Facebook</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__container">
+        <a class="page-footer__link" href="#">Разработано HTMLAcademy</a>
+      </div>
     </footer>
   </body>
 </html>

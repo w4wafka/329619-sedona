@@ -5,7 +5,9 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__logo" src="#" alt=" 'City of Sedona' ">
+      <a href="#" class="page-header__logo  logo">
+        <img class="logo__item" src="#" alt=" 'City of Sedona' ">
+      </a>
       <nav class="page-header__navigation">
         <ul class="page-header__list">
           <li class="page-header__item">
@@ -22,7 +24,7 @@
           </li>
         </ul>
       </nav>
-      <section class="page-header__content  header__content  header__content--less">
+      <section class="page-header__content  page-header__content--less">
         <img src="#" alt=" 'SEDONA' ">
       </section>
     </header>
@@ -34,32 +36,48 @@
       <section class="photo-main__gallery  gallery">
         <div class="wrapper">
           <div class="gallery__item">
-            <img src="#" alt="#">
+            <a href="#">
+              <img src="#" alt="#">
+            </a>
             <b class="gallery__photo-title">Неродные просторы</b>
             <span class="gallery__author">Автор фото: Борис</span>
-            <button class="gallery__button" type="button" name="button">Likes</button>
-            <span class="gallery__likes">1350</span>
+            <div class="gallery__likes  likes">
+              <button class="likes__button" type="button" name="button">Likes</button>
+              <span class="likes__number">254</span>
+            </div>
           </div>
           <div class="gallery__item">
-            <img src="#" alt="#">
+            <a href="#">
+              <img src="#" alt="#">
+            </a>
             <b class="gallery__photo-title">Местная растительность</b>
             <span class="gallery__author">Автор фото: Сергей</span>
-            <button class="gallery__button" type="button" name="button">Likes</button>
-            <span class="gallery__likes">143</span>
+            <div class="gallery__likes  likes">
+              <button class="likes__button" type="button" name="button">Likes</button>
+              <span class="likes__number">254</span>
+            </div>
           </div>
           <div class="gallery__item">
-            <img src="#" alt="#">
+            <a href="#">
+              <img src="#" alt="#">
+            </a>
             <b class="gallery__photo-title">Дорога на Север</b>
             <span class="gallery__author">Автор фото: Пётр</span>
-            <button class="gallery__button" type="button" name="button">Likes</button>
-            <span class="gallery__likes">96</span>
+            <div class="gallery__likes  likes">
+              <button class="likes__button" type="button" name="button">Likes</button>
+              <span class="likes__number">254</span>
+            </div>
           </div>
           <div class="gallery__item">
-            <img src="#" alt="#">
+            <a href="#">
+              <img src="#" alt="#">
+            </a>
             <b class="gallery__photo-title">Мост Дьявола</b>
             <span class="gallery__author">Автор фото: Антон</span>
-            <button class="gallery__button" type="button" name="button">Likes</button>
-            <span class="gallery__likes">254</span>
+            <div class="gallery__likes  likes">
+              <button class="likes__button" type="button" name="button">Likes</button>
+              <span class="likes__number">254</span>
+            </div>
           </div>
         </div>
       </section>
@@ -94,7 +112,9 @@
           </ul>
         </li>
         <li class="page-footer__container">
-          <a class="page-footer__link" href="#">Разработано HTMLAcademy</a>
+          <a class="page-footer__link" href="#">Разработано HTMLAcademy
+            <img src="#" alt="HTML Academy">
+          </a>
         </li>
       </ul>
     </footer>
