@@ -29,10 +29,6 @@
         <img src="#" alt="Welcome to the gorgeous SEDONA! 'Because the Grand Canyon lucks!' ">
       </section>
     </header>
-
-<!--   Не стал выносить для кнопки бургера/закрытия отдельный спан, думаю, можно это реализовать и через псевдо-элементы.
-       Посчитал, что текст на фоновой картинке - изображение контентное, добавил в разметку.   -->
-
     <main class="index-main">
       <section class="index-main__intro">
         <b class="index-main__main-subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
@@ -106,36 +102,26 @@
         </section>
       </div>
     </main>
-
-<!--   Добавил лишних обёрток в main__content, потому что помню макет для пк-версии.
-       Не уверен особо в том, что должны образом подбираю классы. Я по БЭМу верстал, но не так, как здесь учат.
-       Не стеснялся вложенностей из элементов-элементов, то есть.   -->
-
     <footer class="page-footer">
-      <ul class="page-footer__wrapper">
-        <li class="page-footer__container">
-          <b class="page-footer__bold">#visitsedona</b>
-        </li>
-        <li class="page-footer__container">
-          <ul class="page-footer__socials  socials">
-            <li class="socials__item">
-              <a class="socials__link" href="#">Twitter</a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#">Facebook</a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#">Youtube</a>
-            </li>
-          </ul>
-        </li>
-        <li class="page-footer__container">
-          <a class="page-footer__link" href="#">Разработано HTMLAcademy</a>
-        </li>
-      </ul>
+      <div class="page-footer__container">
+        <b class="page-footer__bold">#visitsedona</b>
+      </div>
+      <div class="page-footer__container">
+        <ul class="page-footer__socials  socials">
+          <li class="socials__item">
+            <a class="socials__link" href="#">Twitter</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">Facebook</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__container">
+        <a class="page-footer__link" href="#">Разработано HTMLAcademy</a>
+      </div>
     </footer>
-
-<!--   Списками редко размечаю, но вроде как семантично, так что вот.   -->
-
   </body>
 </html>
