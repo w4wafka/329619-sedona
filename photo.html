@@ -2,12 +2,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="page-header__logo  logo">
-        <img class="logo__item" src="#" alt=" 'City of Sedona' ">
-      </a>
       <nav class="page-header__navigation">
         <ul class="page-header__list">
           <li class="page-header__item">
@@ -24,6 +24,10 @@
           </li>
         </ul>
       </nav>
+      <a class="page-header__logo  logo">
+        <img class="logo__item" src="img/logo-sedona-mobile.svg" width="102" height="84" alt=" 'City of Sedona' ">
+        <button class="logo__burger-button">Открыть меню</button>
+      </a>
       <section class="page-header__content  page-header__content--less">
         <img src="#" alt=" 'SEDONA' ">
       </section>
@@ -36,8 +40,8 @@
       <section class="photo-main__gallery  gallery">
         <div class="wrapper">
           <div class="gallery__item">
-            <a href="#">
-              <img src="#" alt="#">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="img\photo-sunset-mobile@1x.jpg" alt="#">
             </a>
             <b class="gallery__photo-title">Неродные просторы</b>
             <span class="gallery__author">Автор фото: Борис</span>
@@ -47,8 +51,8 @@
             </div>
           </div>
           <div class="gallery__item">
-            <a href="#">
-              <img src="#" alt="#">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="img/photo-cactus-mobile@1x.jpg" alt="#">
             </a>
             <b class="gallery__photo-title">Местная растительность</b>
             <span class="gallery__author">Автор фото: Сергей</span>
@@ -58,8 +62,8 @@
             </div>
           </div>
           <div class="gallery__item">
-            <a href="#">
-              <img src="#" alt="#">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="img/photo-roads-mobile@1x.jpg" alt="#">
             </a>
             <b class="gallery__photo-title">Дорога на Север</b>
             <span class="gallery__author">Автор фото: Пётр</span>
@@ -69,8 +73,8 @@
             </div>
           </div>
           <div class="gallery__item">
-            <a href="#">
-              <img src="#" alt="#">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="img\photo-bridge-mobile@1x.jpg" alt="#">
             </a>
             <b class="gallery__photo-title">Мост Дьявола</b>
             <span class="gallery__author">Автор фото: Антон</span>
@@ -105,7 +109,7 @@
         </ul>
       </div>
       <div class="page-footer__container">
-        <a class="page-footer__link" href="#">Разработано HTMLAcademy</a>
+        <a class="page-footer__link" href="#">Разработано</a>
       </div>
     </footer>
   </body>

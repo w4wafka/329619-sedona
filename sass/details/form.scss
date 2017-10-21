@@ -1,0 +1,10 @@
+.form {
+  &__item {
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.form__item:last-child {
+  border: none;
+}

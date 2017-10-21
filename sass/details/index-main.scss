@@ -1,0 +1,108 @@
+.index-main {
+  @include mainfont();
+  &__intro {
+    width: 100%;
+    text-align: center;
+  }
+  &__main-subtitle {
+    display: inline-block;
+    vertical-align: center;
+    width: 80%;
+    @include mainfont();
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  &__subtitle {
+    display: inline-block;
+    vertical-align: center;
+    width: 80%;
+    @include mainfont();
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+  }
+  &__text {
+    @include mainfont();
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 26px;
+  }
+  &__subtext {
+    @include mainfont();
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  &__image {
+    display: block;
+    width: 100%;
+    height: 260px;
+    background: red;
+    font-size: 0;
+  }
+  &__reason {
+    padding: 20px 20px;
+  }
+  &__number {
+    width: 100%;
+    display: inline-block;
+    vertical-align: center;
+    margin-top: 10px;
+    background: inherit;
+    position: relative;
+  }
+  &__write {
+    padding: 30px 20px 0;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__title {
+    @include mainfont();
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 26px;
+  }
+  &__map {
+    height: 350px;
+    background: red;
+  }
+}
+
+.index-main__reason--first {
+  padding: 40px 0;
+  background: $lblue;
+  color: $white;
+  text-align: center;
+}
+
+.index-main__reason--second {
+  padding-left: 50px;
+  position: relative;
+}
+
+.index-main__reason--third {
+  text-align: center;
+  background: #eeeeee;
+  border-bottom: 1px solid #d6d6d6;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.index-main__reason--second .index-main__subtitle,
+.index-main__reason--third .index-main__subtitle {
+  margin: 0;
+}
+
+.index-main__reason--first  .index-main__subtitle,
+.index-main__reason--first  .index-main__subtext,
+.index-main__reason--first  .index-main__number  {
+  display: inline-block;
+  vertical-align: center;
+  width: 85%;
+  margin: 7px auto;
+}

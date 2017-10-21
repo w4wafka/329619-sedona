@@ -1,0 +1,8 @@
+.button {
+  width: 100%;
+  display: inline-block;
+  vertical-align: center;
+  background: $lblue;
+  padding: 10px 0;
+  @include bwpts();
+}

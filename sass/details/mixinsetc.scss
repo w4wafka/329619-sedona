@@ -1,0 +1,20 @@
+$pts: "PTSans", "Arial", sans-serif;
+$white: #ffffff;
+$lblue: #81b3d2;
+$lightwhite: #333333;
+
+@mixin bwpts() {
+  font-family: $pts;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+@mixin mainfont() {
+  font-family: $pts;
+  text-transform: uppercase;
+  text-decoration: none;
+}

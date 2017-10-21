@@ -1,0 +1,61 @@
+.page-header {
+  margin: 0;
+  padding: 0;
+  &__navigation {
+    background: $lblue;
+    box-shadow: inset 0 -7px 9px -7px rgba(0,1,1,0.65);
+    // display: none;
+  }
+  &__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+  }
+  &__item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
+  }
+  &__nav-link {
+    display: inline-block;
+    vertical-align: center;
+    padding: 8px 0 7px 0;
+    width: 100%;
+    @include bwpts();
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 400px;
+    background: url("../img/bg-back-mobile.jpg") no-repeat center top;;
+    font-size: 0;
+    margin-bottom: 35px;
+  &__text {
+  }
+  }
+}
+
+.page-header__content::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 27px;
+  left: 0px;
+  bottom: 11px;
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center;
+  background-size: cover;
+  z-index: 10;
+}
+
+.page-header__content--less {
+  height: 160px;
+  &::after {
+    bottom: 0;
+  }
+}
