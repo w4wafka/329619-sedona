@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 40px 20px 20px;
+  padding: 35px 20px 20px;
   text-align: center;
   &__bold {
     @include mainfont();
@@ -7,12 +7,39 @@
     font-weight: 800;
     line-height: 26px;
   }
+  &__container--intro {
+    margin-bottom: 35px;
+  }
+  &__image {
+    position: absolute;
+    width: 40px;
+    right: 69px;
+    top: -6px;
+    cursor: pointer;
+  }
+}
+
+.page-footer__container--parent {
+  position: relative;
 }
 
 .page-footer__container .page-footer__link {
-  margin-left: -20px;
+  margin-left: -40px;
+  width: 70px;
+  position: relative;
   @include mainfont();
   font-size: 14px;
   line-height: 26px;
   color: #000000;
+}
+
+.page-footer__image {
+  transition: 0.2s;
+  &:hover,
+  &:focus {
+    fill: #81b3d2;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }

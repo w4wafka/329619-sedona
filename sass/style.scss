@@ -5,6 +5,12 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: $tablet-width) {
+  body {
+    width: 768px;
+  }
+}
+
 @import "sass/details/page-header.scss";
 
 @import "sass/details/logo.scss";
@@ -24,3 +30,23 @@ body {
 @import "sass/details/form-main.scss";
 
 @import "sass/details/form.scss";
+
+@import "sass/details/wrapper.scss";
+
+@import "sass/details/jsclasses.scss";
+
+@import "sass/details/activity.scss";
+
+@import "sass/details/likes.scss";
+
+@import "sass/details/video.scss";
+
+@import "sass/details/introduce.scss";
+
+@import "sass/details/contacts.scss";
+
+@import "sass/details/impression.scss";
+
+@import "sass/details/checkout.scss";
+
+@import "sass/details/comments.scss";

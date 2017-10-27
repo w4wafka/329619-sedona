@@ -1,3 +1,18 @@
 .form-main {
   @include mainfont();
+  &__intro {
+    text-align: center;
+    padding: 10px 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  &__main-subtitle {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  &__main-text {
+    margin-top: 28px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 17px;
+  }
 }

@@ -1,29 +1,29 @@
 .page-header {
   margin: 0;
   padding: 0;
-  &__navigation {
-    background: $lblue;
-    box-shadow: inset 0 -7px 9px -7px rgba(0,1,1,0.65);
-    // display: none;
-  }
   &__list {
     width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
-
   }
   &__item {
+    background: $lblue;
     position: relative;
     width: 100%;
     text-align: center;
-    border-top: 1px solid #9ac2db;
-    border-bottom: 1px solid #678fa8;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+  &__item:first-child {
+    border-top: none;
+  }
+  &__item:last-child {
+    border-bottom: none;
   }
   &__nav-link {
     display: inline-block;
     vertical-align: center;
-    padding: 8px 0 7px 0;
     width: 100%;
     @include bwpts();
   }
@@ -33,11 +33,13 @@
     align-items: center;
     position: relative;
     height: 400px;
-    background: url("../img/bg-back-mobile.jpg") no-repeat center top;;
+    background: url("../img/bg-back-mobile.jpg") no-repeat center top;
     font-size: 0;
-    margin-bottom: 35px;
-  &__text {
+    margin-bottom: 29px;
   }
+  &__text {
+    margin-top: -6px;
+    height: 214px;
   }
 }
 
@@ -54,8 +56,61 @@
 }
 
 .page-header__content--less {
-  height: 160px;
+  height: 159px;
+  background-position: bottom;
   &::after {
     bottom: 0;
   }
+  .page-header__text {
+    width: 230px;
+    margin-top: -15px;
+  }
+}
+
+.page-header__item .page-header__nav-link {
+  padding: 7px 0 7px 0;
+}
+
+.page-header__item:active .page-header__nav-link {
+  opacity: 0.3;
+}
+
+.page-header__item:last-child {
+  box-shadow: inset 0 -6px 9px -7px rgba(0,1,1,0.65);
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    position: relative;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__navigation {
+      background-color: transparent;
+      box-shadow: none;
+    }
+    &__item {
+      border: 0;
+    }
+    &__text {
+      height: 350px;
+    }
+    &__content {
+      height: 517px;
+      background-size: cover;
+    }
+    &__content::after {
+      width: 768px;
+    }
+  }
+  .page-header .page-header__nav-link {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+  }
+}
+
+.page-header__nav-link--active {
+  cursor: default;
 }

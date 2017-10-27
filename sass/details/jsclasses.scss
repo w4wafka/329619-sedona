@@ -1,0 +1,87 @@
+.js-hidden {
+  display: none;
+}
+
+.js-active {
+  display: block;
+}
+
+.js-burger-close {
+  position: absolute;
+  top: -197px;
+  right: 18px;
+  border: none;
+  width: 28px;
+  height: 4px;
+  background: #ffffff;
+  transform: rotate(45deg);
+}
+
+.js-burger-close::after {
+  display: none;
+}
+
+.js-burger-close::before {
+  background: #ffffff;
+  width: 28px;
+  transform: rotate(-90deg);
+  top: 0;
+}
+
+.js-popup {
+  padding: 45px 20px 0;
+  background: #ffffff;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 7px 15px -6px rgba(0, 0, 0, 0.15);
+  font-family: $pts;
+  text-align: center;
+  margin-bottom: 50px;
+  &__title {
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__button {
+    background: $lblue;
+    transition: 0.2s;
+    outline: none;
+    border: none;
+    margin-left: -2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: $pts;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 38px;
+    padding: 10px 70px;
+  }
+  &__text {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 48px;
+  }
+  &__button:hover,
+  &__button:focus {
+    background: #669ec0;
+  }
+  &__button:active {
+    background: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.js-popup--success {
+  .js-popup__close {
+    margin-top: 25px;
+    background: #f2f2f2;
+    padding: 20px 0;
+  }
+}
+
+.js-popup--fail {
+  padding-bottom: 35px;
+}

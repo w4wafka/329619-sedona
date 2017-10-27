@@ -2,6 +2,7 @@ $pts: "PTSans", "Arial", sans-serif;
 $white: #ffffff;
 $lblue: #81b3d2;
 $lightwhite: #333333;
+$tablet-width: 648px;
 
 @mixin bwpts() {
   font-family: $pts;
