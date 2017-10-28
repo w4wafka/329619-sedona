@@ -1,0 +1,31 @@
+.likes__button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 0;
+  display: inline-block;
+  width: 33px;
+  height: auto;
+}
+
+.likes__number {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.likes__icon {
+  margin-top: -15px;
+  margin-left: -10px;
+  opacity: 0.3;
+  transition: 0.2s;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    transition: 0.2s;
+  }
+  &:active {
+    opacity: 1;
+    transition: 0.2s;
+  }
+}

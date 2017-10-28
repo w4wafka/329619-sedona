@@ -4,15 +4,16 @@
   padding: 0;
   margin-bottom: 43px;
   justify-content: center;
-  &__item {
-    position: relative;
-    font-size: 0;
-    display: block;
-    width: 46px;
-    height: 48px;
-    background: $lblue;
-    margin: 0 4px;
-  }
+}
+
+.socials__item {
+  position: relative;
+  font-size: 0;
+  display: block;
+  width: 46px;
+  height: 48px;
+  background: $lblue;
+  margin: 0 4px;
 }
 
 .socials__icon {

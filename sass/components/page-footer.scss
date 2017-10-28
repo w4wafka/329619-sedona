@@ -1,22 +1,27 @@
 .page-footer {
+  width: 320px;
+  margin: 0 auto;
   padding: 35px 20px 20px;
   text-align: center;
-  &__bold {
-    @include mainfont();
-    font-size: 21px;
-    font-weight: 800;
-    line-height: 26px;
-  }
-  &__container--intro {
-    margin-bottom: 35px;
-  }
-  &__image {
-    position: absolute;
-    width: 40px;
-    right: 69px;
-    top: -6px;
-    cursor: pointer;
-  }
+}
+
+.page-footer__bold {
+  @include mainfont();
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 26px;
+}
+
+.page-footer__container--intro {
+  margin-bottom: 35px;
+}
+
+.page-footer__image {
+  position: absolute;
+  width: 40px;
+  right: 69px;
+  top: -6px;
+  cursor: pointer;
 }
 
 .page-footer__container--parent {

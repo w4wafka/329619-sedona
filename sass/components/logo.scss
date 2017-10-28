@@ -5,22 +5,23 @@
   position: relative;
   font-size: 0;
   height: 56px;
-  &__burger-button {
-    cursor: pointer;
-    display: none;
-    outline: none;
-    position: absolute;
-    width: 24px;
-    height: 5px;
-    border: 0;
-    border-top: 1px solid #c0d9e8;
-    border-bottom: 1px solid #c0d9e8;
-    padding: 0 9.5px;
-    background: $lblue;
-    font-size: 0;
-    right: 20px;
-    top: calc(50% - 2.5px);
-  }
+}
+
+.logo__burger-button {
+  cursor: pointer;
+  display: none;
+  outline: none;
+  position: absolute;
+  width: 24px;
+  height: 5px;
+  border: 0;
+  border-top: 1px solid #c0d9e8;
+  border-bottom: 1px solid #c0d9e8;
+  padding: 0 9.5px;
+  background: $lblue;
+  font-size: 0;
+  right: 20px;
+  top: calc(50% - 2.5px);
 }
 
 .logo--hidden {

@@ -1,52 +1,43 @@
-@import "sass/details/mixinsetc.scss";
+@import "sass/components/mixinsetc.scss";
 
-body {
-  width: 320px;
-  margin: 0 auto;
-}
+@import "sass/components/body.scss";
 
-@media (min-width: $tablet-width) {
-  body {
-    width: 768px;
-  }
-}
+@import "sass/components/page-header.scss";
 
-@import "sass/details/page-header.scss";
+@import "sass/components/logo.scss";
 
-@import "sass/details/logo.scss";
+@import "sass/components/index-main.scss";
 
-@import "sass/details/index-main.scss";
+@import "sass/components/button.scss";
 
-@import "sass/details/button.scss";
+@import "sass/components/page-footer.scss";
 
-@import "sass/details/page-footer.scss";
+@import "sass/components/socials.scss";
 
-@import "sass/details/socials.scss";
+@import "sass/components/photo-main.scss";
 
-@import "sass/details/photo-main.scss";
+@import "sass/components/gallery.scss";
 
-@import "sass/details/gallery.scss";
+@import "sass/components/form-main.scss";
 
-@import "sass/details/form-main.scss";
+@import "sass/components/form.scss";
 
-@import "sass/details/form.scss";
+@import "sass/components/wrapper.scss";
 
-@import "sass/details/wrapper.scss";
+@import "sass/components/jsclasses.scss";
 
-@import "sass/details/jsclasses.scss";
+@import "sass/components/activity.scss";
 
-@import "sass/details/activity.scss";
+@import "sass/components/likes.scss";
 
-@import "sass/details/likes.scss";
+@import "sass/components/video.scss";
 
-@import "sass/details/video.scss";
+@import "sass/components/introduce.scss";
 
-@import "sass/details/introduce.scss";
+@import "sass/components/contacts.scss";
 
-@import "sass/details/contacts.scss";
+@import "sass/components/impression.scss";
 
-@import "sass/details/impression.scss";
+@import "sass/components/checkout.scss";
 
-@import "sass/details/checkout.scss";
-
-@import "sass/details/comments.scss";
+@import "sass/components/comments.scss";

@@ -13,6 +13,5 @@ btn.addEventListener("click", function(event) {
     nav.classList.remove("js-active");
     btn.classList.remove("js-burger-close");
     nav.classList.add("js-hidden");
-
   }
 });
