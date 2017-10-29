@@ -268,14 +268,14 @@
     width: 75px;
   }
 
-  .index-main__reason--burger  .index-main__subtext {
-    padding: 0 20px;
-  }
-
   .index-main__subtitle--gift  .index-main__subimg {
     width: 64px;
     top: -104px;
     left: 45px;
+  }
+
+  .index-main__reason--burger  .index-main__subtext {
+    padding: 0 20px;
   }
 
   .index-main__reason--triangle .index-main__subtext {
@@ -324,7 +324,7 @@
     margin-top: -30px;
     padding-top: 30px;
     width: 1200px;
-    padding-bottom: 100px;
+    padding-bottom: 47px;
   }
 
   .index-main__write  .index-main__title {
@@ -333,5 +333,67 @@
 
   .index-main__write  .index-main__text {
     padding: 0 25%;
+  }
+
+  .index-main__reason--triangle  {
+    padding-top: 45px;
+  }
+
+  .index-main__reason--triangle  .index-main__subtitle {
+    width: 50%;
+  }
+
+  .index-main__reason--triangle  .index-main__subtext {
+    padding: 0 25px;
+  }
+
+  .index-main__subtitle--house  .index-main__subimg {
+    top: -98px;
+    left: 97px;
+    width: 75px;
+  }
+
+  .index-main__subtitle--burger  .index-main__subimg {
+    top: -96px;
+    left: 98px;
+    width: 76px;
+  }
+
+  .index-main__subtitle--gift  .index-main__subimg {
+    width: 64px;
+    top: -102px;
+    left: 104px;
+  }
+
+  .index-main__reason--second {
+    margin-bottom: 20px;
+  }
+
+  .index-main__reason--bridge {
+    padding-top: 47px;
+  }
+
+  .index-main__reason--bridge .index-main__subtitle {
+    width: 50%;
+  }
+
+  .index-main__reason--bridge .index-main__subtext {
+    padding: 0 55px;
+  }
+
+  .index-main__reason--third {
+    padding-bottom: 20px;
+  }
+
+  .index-main__reason--third .index-main__subtitle {
+    width: 50%;
+  }
+
+  .index-main__write {
+    margin-bottom: 65px;
+  }
+
+  .index-main__write .index-main__text {
+    margin-bottom: 48px;
   }
 }

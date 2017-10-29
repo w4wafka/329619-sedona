@@ -120,3 +120,21 @@
     margin-left: -2px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .introduce {
+    width: 400px;
+    margin-left: 61px;
+    &::after {
+      left: -61px;
+    }
+  }
+
+  .introduce__title {
+    margin-left: -122px;
+  }
+
+  .introduce__input {
+    flex-grow: 1;
+  }
+}

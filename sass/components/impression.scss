@@ -107,5 +107,16 @@
   .impression__label::after {
     margin-left: 5px;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .impression {
+    margin-left: 64px;
+    margin-right: 96px;
+    width: 400px;
+  }
+
+  .impression__title {
+    margin-left: 101px;
+  }
 }

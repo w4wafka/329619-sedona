@@ -65,3 +65,15 @@
     position: relative;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form__submit {
+    width: 960px;
+    padding-bottom: 50px;
+  }
+
+  .form__submit .form__button {
+    width: 480px;
+    padding-right: 0;
+  }
+}

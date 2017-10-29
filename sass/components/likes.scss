@@ -49,3 +49,30 @@
     margin-left: 0px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .likes {
+    color: #ffffff;
+  }
+
+  .likes__button {
+    width: 40px;
+    height: 20px;
+    margin-right: -3px;
+  }
+
+  .likes__button .likes__icon {
+    fill: #ffffff;
+    opacity: 1;
+    margin: 0;
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+
+}

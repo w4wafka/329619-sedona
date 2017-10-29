@@ -68,3 +68,24 @@
     background: #ffffff;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comments {
+    width: 960px;
+    z-index: 5;
+    &::after {
+      z-index: 1;
+      width: 280px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 280px;
+      height: 1px;
+      top: 33px;
+      right: 20px;
+      z-index: 1;
+      background: #eaeaea;
+    }
+  }
+}

@@ -54,3 +54,10 @@
     left: calc(50% - 51px);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 188px;
+    left: calc(50% - 94px);
+  }
+}

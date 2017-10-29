@@ -162,13 +162,27 @@
   }
 
   .checkout__checkbox--fourth {
-    width: 20%;
+    width: 19%;
     order: 2;
+    text-align: left;
     margin-top: 0px;
     margin-left: 0px
   }
 
   .checkout .wrapper {
     justify-content: space-between;
+  }
+
+  .checkout {
+    position: relative;
+    width: 960px;
+    z-index: 5;
+    &::after {
+      z-index: 1;
+    }
+  }
+
+  .checkout__checkbox--fourth .checkout__label {
+    margin-left: 57px;
   }
 }

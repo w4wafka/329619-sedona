@@ -132,13 +132,24 @@
   }
 
   .video__marker {
-    width: 389px;
+    width: 60%;
     margin-left: -75px;
   }
 
   .video__icon {
     fill: #ffffff;
     margin-top: 18px;
+  }
+
+  .video__button:hover  .video__icon,
+  .video__button:focus  .video__icon {
+    fill: #ffffff;
+    fill-opacity: 0.7;
+  }
+
+  .video__button:active  .video__icon {
+    fill: #ffffff;
+    fill-opacity: 0.5;
   }
 
   .video__button--replay {
@@ -151,5 +162,29 @@
 
   .video__button--fullscreen {
     margin-right: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 800px;
+    margin-bottom: 130px;
+  }
+
+  .video__button--replay {
+    margin-left: 9px;
+  }
+
+  .video__button--subtitles {
+    margin-left: 490px;
+  }
+
+  .video__button--fullscreen {
+    margin-right: 20px;
+  }
+
+  .video__marker {
+    width: 540px;
+    margin-left: -75px;
   }
 }
