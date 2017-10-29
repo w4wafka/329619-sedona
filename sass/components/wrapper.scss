@@ -1,0 +1,17 @@
+.wrapper--index-content-first {
+  margin-bottom: 20px;
+}
+
+.wrapper--index-content-second {
+  margin-bottom: 38px;
+}
+
+.wrapper--index-content-third {
+  background: #eeeeee;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    display: flex;
+  }
+}

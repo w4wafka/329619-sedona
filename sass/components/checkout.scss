@@ -1,0 +1,75 @@
+.checkout {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 18px 20px 23px;
+  text-align: center;
+}
+
+.checkout__title {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+
+.checkout__checkbox {
+  text-align: left;
+}
+
+.checkout__input {
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+.checkout__label {
+  display: inline-block;
+  position: relative;
+  text-transform: none;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 57px;
+  margin-left: 80px;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 56px;
+    height: 56px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    left: -80px;
+    top: -15px;
+    z-index: 1;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background: #e5e5e5;
+  }
+
+  &:active::after {
+    background: #d5d5d5;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.checkout__checkbox:last-child .checkout__label {
+  margin-bottom: 20px;
+}
+
+#checkout-1:checked ~ .checkout__label::before,
+#checkout-2:checked ~ .checkout__label::before,
+#checkout-3:checked ~ .checkout__label::before,
+#checkout-4:checked ~ .checkout__label::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 20px;
+  background: url("../img/icon-tick.svg") no-repeat center;
+  background-size: contain;
+  border-radius: 5px;
+  left: -65px;
+  top: 3px;
+  z-index: 2;
+}

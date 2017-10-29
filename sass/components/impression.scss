@@ -1,0 +1,83 @@
+.impression {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 18px 20px 0;
+  text-align: center;
+}
+
+.impression__title {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.impression__radio {
+  font-family: $pts;
+  margin-bottom: 46px;
+  text-transform: none;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.impression__input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.impression__label {
+  margin-left: 80px;
+  cursor: pointer;
+  position: relative;
+  &::after {
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    top: -15px;
+    left: -80px;
+  }
+  &:hover::after,
+  &:focus::after {
+    background: #e5e5e5;
+  }
+  &:active::after {
+    background: #d5d5d5;
+  }
+}
+
+#impression-1:checked ~ .impression__label::after,
+#impression-2:checked ~ .impression__label::after,
+#impression-3:checked ~ .impression__label::after {
+  cursor: pointer;
+  position: absolute;
+  content: "";
+  box-sizing: border-box;
+  width: 56px;
+  height: 56px;
+  border: 17px solid #f2f2f2;
+  border-radius: 50%;
+  background: #333333;
+  z-index: 1;
+  top: -15px;
+  left: -80px;
+}
+
+#impression-1:checked ~ .impression__label:hover::after,
+#impression-2:checked ~ .impression__label:hover::after,
+#impression-3:checked ~ .impression__label:hover::after,
+#impression-1:checked ~ .impression__label:focus::after,
+#impression-2:checked ~ .impression__label:focus::after,
+#impression-3:checked ~ .impression__label:focus::after {
+  border: 17px solid #e5e5e5;
+}
+
+#impression-1:checked ~ .impression__label:active::after,
+#impression-2:checked ~ .impression__label:active::after,
+#impression-3:checked ~ .impression__label:active::after {
+  border: 17px solid #d5d5d5;
+  background: #a4a4a4;
+}

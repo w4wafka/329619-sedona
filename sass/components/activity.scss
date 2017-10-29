@@ -1,0 +1,18 @@
+.activity {
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: #669ec0;
+    transition: 0.2s;
+  }
+  &:active {
+    background: #5496bd;
+    transition: 0.2s;
+  }
+}
+
+.activity:active .activity__item {
+  opacity: 0.3;
+  transition: 0.2s;
+}

@@ -1,0 +1,35 @@
+.gallery {
+  margin-bottom: 35px;
+}
+
+.gallery__item {
+  padding: 2px 20px 18px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  @include mainfont();
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 22px;
+}
+
+.gallery__link {
+  margin-bottom: 13px;
+}
+
+.gallery__author {
+  width: 100%;
+  text-transform: none;
+  font-size: 14px;
+  margin-bottom: 13px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+}
+
+.gallery__photo-title {
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 6px;
+}

@@ -1,0 +1,50 @@
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+  padding: 35px 20px 20px;
+  text-align: center;
+}
+
+.page-footer__bold {
+  @include mainfont();
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 26px;
+}
+
+.page-footer__container--intro {
+  margin-bottom: 35px;
+}
+
+.page-footer__image {
+  position: absolute;
+  width: 40px;
+  right: 69px;
+  top: -6px;
+  cursor: pointer;
+}
+
+.page-footer__container--parent {
+  position: relative;
+}
+
+.page-footer__container .page-footer__link {
+  margin-left: -40px;
+  width: 70px;
+  position: relative;
+  @include mainfont();
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.page-footer__image {
+  transition: 0.2s;
+  &:hover,
+  &:focus {
+    fill: #81b3d2;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
