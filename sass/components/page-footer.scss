@@ -1,4 +1,5 @@
 .page-footer {
+  box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
   padding: 35px 20px 20px;
@@ -24,12 +25,9 @@
   cursor: pointer;
 }
 
-.page-footer__container--parent {
-  position: relative;
-}
-
-.page-footer__container .page-footer__link {
-  margin-left: -40px;
+.page-footer__container--parent .page-footer__link {
+  display: inline-block;
+  margin-left: -62px;
   width: 70px;
   position: relative;
   @include mainfont();
@@ -38,13 +36,32 @@
   color: #000000;
 }
 
-.page-footer__image {
+.page-footer__link .page-footer__image {
+  position: absolute;
   transition: 0.2s;
+  right: -66px;
   &:hover,
   &:focus {
     fill: #81b3d2;
   }
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    margin-top: 11px;
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__container {
+    width: 30%;
+  }
+
+  .page-footer__container--parent  .page-footer__link {
+    margin-left: -50px;
   }
 }

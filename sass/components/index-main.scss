@@ -4,12 +4,6 @@
   @include mainfont();
 }
 
-@media (min-width: $tablet-width) {
-  .index-main {
-    width: 748px;
-  }
-}
-
 .index-main__intro {
   padding: 0 20px;
   box-sizing: border-box;
@@ -202,7 +196,124 @@
 
 
 @media (min-width: $tablet-width) {
+  .index-main {
+    margin-top: 50px;
+    width: 768px;
+  }
+
+  .index-main__reason {
+    width: calc(33.3333% - 60px);
+    padding: 20px 30px;
+  }
+
+  .index-main__image {
+    height: 256px;
+  }
+
   .index-main__reason--bridge {
     order: 1;
+  }
+
+  .index-main__reason--first {
+    box-sizing: border-box;
+    width: 33.3333%;
+    padding-top: 38px;
+    height: 256px;
+    &::after {
+      display: none;
+    }
+  }
+
+  .index-main__reason--second {
+    padding-top: 122px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .index-main__reason--second .index-main__subtitle {
+    margin-bottom: 16px;
+  }
+
+  .index-main__reason--gift {
+    order: 1;
+  }
+
+  .index-main__intro {
+    width: 540px;
+    margin: 0 auto 50px;
+  }
+
+  .index-main__main-subtitle {
+    font-size: 21px;
+  }
+
+  .index-main__subtitle {
+    font-size: 21px;
+  }
+
+  .index-main__subtext {
+    padding: 0 15px;
+  }
+
+  .index-main__subtitle--house  .index-main__subimg {
+    top: -100px;
+    left: 40px;
+    width: 75px;
+  }
+
+  .index-main__subtitle--burger  .index-main__subimg {
+    top: -95px;
+    left: 41px;
+    width: 75px;
+  }
+
+  .index-main__reason--burger  .index-main__subtext {
+    padding: 0 20px;
+  }
+
+  .index-main__subtitle--gift  .index-main__subimg {
+    width: 64px;
+    top: -104px;
+    left: 45px;
+  }
+
+  .index-main__reason--triangle .index-main__subtext {
+    margin-bottom: 0;
+  }
+
+  .index-main__reason--first .index-main__number,
+  .index-main__reason--third .index-main__number {
+    margin-bottom: 20px;
+  }
+
+  .index-main__reason--third {
+    padding-top: 30px;
+    border: none;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+  }
+
+  .index-main__reason--third .index-main__subtext {
+    padding: 0 0px;
+  }
+
+  .index-main__write {
+    margin-top: 25px;
+    margin-bottom: 58px;
+  }
+
+  .index-main__write  .index-main__title {
+    font-size: 30px;
+    margin-bottom: 17px;
+  }
+
+  .index-main__write  .index-main__text {
+    width: 450px;
+    margin-bottom: 42px;
+  }
+
+  .index-main__write  .button {
+    width: 460px;
+    padding-bottom: 8px;
   }
 }

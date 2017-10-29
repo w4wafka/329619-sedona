@@ -44,3 +44,9 @@
   fill-opacity: 0.3;
   transition: 0.2s;
 }
+
+@media (min-width: $tablet-width) {
+  .socials {
+    margin-top: -10px;
+  }
+}

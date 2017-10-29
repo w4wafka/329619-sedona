@@ -21,3 +21,34 @@
     line-height: 24px;
     margin-bottom: 17px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-main {
+    width: 768px;
+    margin-top: 58px;
+  }
+
+  .form-main__intro {
+    width: 445px;
+    margin: 0 auto 55px;
+    border: none;
+    letter-spacing: 0.15px;
+  }
+
+  .form-main__main-subtitle {
+    font-size: 30px;
+    margin-left: -7px;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    margin-bottom: -5px;
+  }
+
+  .form-main__main-text {
+    margin-left: -4px;
+  }
+
+  .form-main__content {
+  }
+
+
+}
