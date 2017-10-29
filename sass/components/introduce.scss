@@ -2,7 +2,8 @@
   border-bottom: 1px solid #e5e5e5;
   padding: 19px 20px 6px;
 }
-  .introduce__title {
+
+.introduce__title {
   display: inline-block;
   font-size: 18px;
   font-weight: 800;
@@ -10,11 +11,13 @@
   text-align: center;
   margin-bottom: 22px;
 }
+
 .introduce__label {
   font-size: 14px;
   margin-top: -16px;
   cursor: pointer;
 }
+
 .introduce__input {
   font-family: $pts;
   font-size: 18px;

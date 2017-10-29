@@ -3,6 +3,7 @@
   border-bottom: 1px solid #e5e5e5;
   padding: 19px 20px 14px;
 }
+
 .contacts__title {
   display: inline-block;
   font-size: 18px;
@@ -10,10 +11,12 @@
   width: 100%;
   margin-bottom: 24px;
 }
+
 .contacts__tel,
 .contacts__email {
   text-align: left;
 }
+
 .contacts__label {
   margin-left: 22px;
   font-size: 14px;
@@ -31,6 +34,7 @@
     z-index: 10;
   }
 }
+
 .contacts__input {
   font-family: $pts;
   box-sizing: border-box;

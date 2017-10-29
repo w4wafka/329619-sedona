@@ -3,19 +3,23 @@
   padding: 18px 20px 23px;
   text-align: center;
 }
+
 .checkout__title {
   display: inline-block;
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 32px;
 }
+
 .checkout__checkbox {
   text-align: left;
 }
+
 .checkout__input {
   position: absolute;
   clip: rect(0,0,0,0);
 }
+
 .checkout__label {
   display: inline-block;
   position: relative;
@@ -35,13 +39,16 @@
     top: -15px;
     z-index: 1;
   }
+
   &:hover::after,
   &:focus::after {
     background: #e5e5e5;
   }
+
   &:active::after {
     background: #d5d5d5;
   }
+
   &:active::before {
     opacity: 0.3;
   }

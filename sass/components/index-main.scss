@@ -4,6 +4,12 @@
   @include mainfont();
 }
 
+@media (min-width: $tablet-width) {
+  .index-main {
+    width: 748px;
+  }
+}
+
 .index-main__intro {
   padding: 0 20px;
   box-sizing: border-box;
@@ -134,18 +140,18 @@
 }
 
 .index-main__subtitle--house .index-main__subimg {
-   left: -48px;
-   top: -10px;
+  left: -48px;
+  top: -10px;
 }
 
 .index-main__subtitle--gift .index-main__subimg {
-   left: -45px;
-   top: -12px;
+  left: -45px;
+  top: -12px;
 }
 
 .index-main__subtitle--burger .index-main__subimg {
-   left: -51px;
-   top: -6px;
+  left: -51px;
+  top: -6px;
 }
 
 .index-main__reason--third {
