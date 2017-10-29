@@ -24,10 +24,6 @@
   top: calc(50% - 2.5px);
 }
 
-.logo--hidden {
-  display: none;
-}
-
 .logo__burger-button {
   &::before {
     position: absolute;
@@ -52,9 +48,9 @@
 
 @media (min-width: $tablet-width) {
   .logo {
-    display: none;
-}
-  .logo--hidden {
-    display: block;
+    width: 102px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 51px);
   }
 }

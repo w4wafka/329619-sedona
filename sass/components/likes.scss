@@ -29,3 +29,23 @@
     transition: 0.2s;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .likes {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+
+  .gallery__item:nth-child(2n +1) .likes {
+    right: 35px;
+  }
+
+  .gallery__item:first-child .likes {
+    right: 20px;
+  }
+
+  .likes__icon {
+    margin-left: 0px;
+  }
+}

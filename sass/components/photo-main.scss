@@ -38,3 +38,32 @@
   font-size: 14px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .photo-main {
+    width: 768px;
+  }
+
+  .photo-main__intro {
+    margin-top: 75px;
+    width: 440px;
+    margin: 75px auto 39px;
+    border: none;
+  }
+
+  .photo-main__intro  .photo-main__main-subtitle {
+    font-size: 30px;
+    margin-bottom: 34px;
+  }
+
+  .photo-main__close {
+    width: 430px;
+    margin: 0 auto 72px;
+  }
+
+  .photo-main__close .photo-main__title {
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: -5px;
+  }
+}

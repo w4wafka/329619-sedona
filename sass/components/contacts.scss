@@ -95,3 +95,52 @@
   bottom: -48px;
   background: url("../img/icon-mail.svg") no-repeat center;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    border: none;
+    width: 648px;
+    margin: 13px auto 7px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: calc(100% - 40px);
+      height: 1px;
+      top: 32px;
+      left: 20px;
+      z-index: -10;
+      background: #eaeaea;
+    }
+  }
+
+  .contacts__title {
+    display: inline-block;
+    width: 400px;
+    margin: 0 auto 25px;
+    font-size: 21px;
+    background: #ffffff;
+    opacity: 1;
+    position: relative;
+    letter-spacing: 0.15px;
+  }
+
+  .contacts__tel {
+    margin-bottom: 12px;
+  }
+
+  .contacts__tel  .contacts__label::before {
+    left: 590px;
+    bottom: -50px;
+  }
+
+  .contacts__email  .contacts__label::before {
+    left: 590px;
+    bottom: -48px;
+  }
+
+  .contacts__tel  .contacts__label::after,
+  .contacts__email  .contacts__label::after {
+    left: 568px;
+  }
+}
