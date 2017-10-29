@@ -30,3 +30,38 @@
 .form__item:last-child {
   border: none;
 }
+
+.form__explane {
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__submit {
+    width: 648px;
+    margin: 37px auto 61px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__submit .form__button {
+    width: 324px;
+    margin-left: 0;
+    padding-right: 13px;
+    letter-spacing: 0.15;
+  }
+
+  .form__explane {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 22px;
+    text-align: right;
+    width: 180px;
+    position: relative;
+  }
+}
