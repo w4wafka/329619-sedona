@@ -16,3 +16,35 @@
   opacity: 0.3;
   transition: 0.2s;
 }
+
+.page-header__list .activity {
+  &:focus,
+  &:hover,
+  &:active {
+    background: transparent;
+  }
+}
+
+.activity:hover .page-header__nav-link,
+.activity:focus .page-header__nav-link {
+  color: $lblue;
+  transition: none;
+}
+
+.activity:active .page-header__nav-link {
+  color: #000000;
+  opacity: 0.3;
+  transition: none;
+}
+
+.activity:hover .page-header__nav-link--active,
+.activity:focus .page-header__nav-link--active {
+  color: #604e43;
+  transition: none;
+}
+
+.activity:active .page-header__nav-link--active {
+  color: #766357;
+  opacity: 0.3;
+  transition: none;
+}

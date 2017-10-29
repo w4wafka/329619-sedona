@@ -2,3 +2,9 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
+@media (min-width: $desktop-width) {
+  body {
+    background: #f2f2f2;
+  }
+}

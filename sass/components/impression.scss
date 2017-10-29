@@ -81,3 +81,31 @@
   border: 17px solid #d5d5d5;
   background: #a4a4a4;
 }
+
+@media (min-width: $tablet-width) {
+  .impression {
+    border: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(50% - 40px);
+    order: -1;
+  }
+
+  .impression__title {
+    font-size: 21px;
+    margin-left: 5px;
+    margin-bottom: 74px;
+  }
+
+  .impression__radio {
+    margin-left: 36px;
+    margin-bottom: 55px;
+    }
+
+  .impression__label::after {
+    margin-left: 5px;
+  }
+
+}

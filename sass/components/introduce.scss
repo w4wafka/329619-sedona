@@ -75,3 +75,48 @@
 .introduce__last-name  .introduce__input {
   margin-left: 17px;
 }
+
+@media (min-width: $tablet-width) {
+  .introduce {
+    border: none;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 0;
+    width: calc(50% - 100px);
+    &::after {
+      position: absolute;
+      content: "";
+      height: 292px;
+      width: 1px;
+      background: #eaeaea;
+      top: 25px;;
+      left: -41px;
+    }
+  }
+
+  .introduce__title {
+    font-size: 21px;
+    margin-left: -65px;
+    margin-bottom: 55px;
+  }
+
+  .introduce__input {
+    flex-grow: 0;
+    width: 215px;
+    padding-right: 20px;
+  }
+
+  .introduce__last-name  .introduce__input {
+    width: 180px;
+  }
+
+  .introduce__family-name  .introduce__input{
+    width: 178px;
+  }
+
+  .introduce__label {
+    margin-left: -2px;
+  }
+}
