@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0;
   position: relative;
+  background: #ffffff;
 }
 
 .page-header__list {
@@ -146,5 +147,12 @@
     width: 462px;
     margin-top: -20px;
     margin-left: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+    margin-bottom: 0;
   }
 }

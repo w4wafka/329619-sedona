@@ -2,6 +2,7 @@
   width: 320px;
   margin: 0 auto;
   @include mainfont();
+  background: #ffffff;
 }
 
 .index-main__intro {
@@ -315,5 +316,22 @@
   .index-main__write  .button {
     width: 460px;
     padding-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index-main {
+    margin-top: -30px;
+    padding-top: 30px;
+    width: 1200px;
+    padding-bottom: 100px;
+  }
+
+  .index-main__write  .index-main__title {
+    width: 100%;
+  }
+
+  .index-main__write  .index-main__text {
+    padding: 0 25%;
   }
 }

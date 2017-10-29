@@ -46,9 +46,13 @@
   .form-main__main-text {
     margin-left: -4px;
   }
+}
 
-  .form-main__content {
+@media (min-width: $desktop-width) {
+  .form-main {
+    margin-top: -40px;
+    padding-top: 40px;
+    width: 1200px;
+    background: #ffffff;
   }
-
-
 }

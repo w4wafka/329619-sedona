@@ -111,7 +111,6 @@
     width: 35%;
     display: flex;
     justify-content: left;
-
   }
 
   .checkout__checkbox--first {
@@ -136,5 +135,40 @@
     order: 2;
     margin-top: 8px;
     margin-left: 31px
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .checkout__checkbox--first {
+    width: 20%;
+    order: -2;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .checkout__checkbox--second {
+    width: 20%;
+    order: 1;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .checkout__checkbox--third {
+    width: 20%;
+    order: 0;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .checkout__checkbox--fourth {
+    width: 20%;
+    order: 2;
+    margin-top: 0px;
+    margin-left: 0px
+  }
+
+  .checkout .wrapper {
+    justify-content: space-between;
   }
 }

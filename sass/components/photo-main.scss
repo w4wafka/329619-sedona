@@ -1,6 +1,7 @@
 .photo-main {
   width: 320px;
   margin: 0 auto;
+  background: #ffffff;
 }
 
 .photo-main__intro {
@@ -65,5 +66,13 @@
     font-size: 30px;
     display: inline-block;
     margin-bottom: -5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-main {
+    width: 1200px;
+    margin-top: -75px;
+    padding-top: 75px;
   }
 }

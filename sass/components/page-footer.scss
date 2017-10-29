@@ -65,3 +65,12 @@
     margin-left: -50px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1200px;
+    margin-top: -50px;
+    padding-top: 50px;
+    background: #ffffff;
+  }
+}
