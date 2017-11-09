@@ -5,6 +5,7 @@
   position: relative;
   font-size: 0;
   height: 56px;
+  position: relative;
 }
 
 .logo__burger-button {
@@ -43,7 +44,16 @@
     height: 4px;
     background: $lblue;
   }
+}
 
+.logo__link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 56px;
+  font-size: 0;
+  left: 0;
+  top: 0;
 }
 
 @media (min-width: $tablet-width) {

@@ -6,6 +6,10 @@
   background: #ffffff;
 }
 
+html {
+width: 100%;
+}
+
 .page-header__list {
   width: 100%;
   list-style: none;
@@ -26,6 +30,13 @@
   &:last-child {
     border-bottom: none;
     box-shadow: inset 0 -6px 9px -7px rgba(0,1,1,0.65);
+  }
+  &:hover,
+  &:focus {
+    background: #669ec0;
+  }
+  &:active {
+    background: #5496bd;
   }
 }
 
@@ -126,7 +137,6 @@
     }
   }
 
-
   .page-header__text {
     display: block;
     margin-top: -13px;
@@ -142,6 +152,7 @@
       height: 62px;
       bottom: -5px;
       background: url("../img/bg-intro-triangle-tablet.svg");
+      background-size: contain;
     }
   }
 
@@ -152,7 +163,7 @@
   }
 
   .page-header__item--second {
-     margin-right: 247px;
+     margin-right: 157px;
   }
 
   .page-header__nav-link--active {
@@ -186,11 +197,15 @@
     }
   }
 
+  .page-header__item--second {
+     margin-right: 244px;
+  }
+
   @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
      .page-header__content {
-      background-image: url("img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 
