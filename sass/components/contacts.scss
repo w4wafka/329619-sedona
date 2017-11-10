@@ -15,6 +15,7 @@
 .contacts__tel,
 .contacts__email {
   text-align: left;
+  opacity: 1;
 }
 
 .contacts__label {
@@ -58,6 +59,30 @@
     transition: 0.4s;
   }
   &:focus::-webkit-input-placeholder {
+    color: transparent;
+    transition: 0.2s;
+  }
+  &::-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+  }
+  &:focus::-moz-placeholder {
+    color: transparent;
+    transition: 0.2s;
+  }
+  &:-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+  }
+  &:focus:-moz-placeholder {
+    color: transparent;
+    transition: 0.2s;
+  }
+  &:-ms-input-placeholder {
+    color: #000000;
+    opacity: 1;
+  }
+  &:focus:-ms-input-placeholder {
     color: transparent;
     transition: 0.2s;
   }

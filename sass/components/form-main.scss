@@ -26,6 +26,7 @@
   .form-main {
     width: 768px;
     margin-top: 58px;
+    margin-bottom: -45px;
   }
 
   .form-main__intro {
@@ -50,8 +51,7 @@
 
 @media (min-width: $desktop-width) {
   .form-main {
-    margin-top: -40px;
-    padding-top: 85px;
+    margin-top: 45px
     width: 1200px;
     background: #ffffff;
   }

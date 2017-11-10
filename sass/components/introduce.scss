@@ -43,6 +43,30 @@
     color: transparent;
     transition: 0.2s;
   }
+  &::-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+  }
+  &:focus::-moz-placeholder {
+    color: transparent;
+    transition: 0.2s;
+  }
+  &:-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+  }
+  &:focus:-moz-placeholder {
+    color: transparent;
+    transition: 0.2s;
+  }
+  &:-ms-input-placeholder {
+    color: #000000;
+    opacity: 1;
+  }
+  &:focus:-ms-input-placeholder {
+    color: transparent;
+    transition: 0.2s;
+  }
   &:hover,
   &:focus {
     background: #e5e5e5;
