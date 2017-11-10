@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fonts.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.min.css" type="text/css"/>
   </head>
   <body>
     <div class="shadow-box">
@@ -56,12 +56,12 @@
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
                   <source media="(min-width: 1200px) and (min-resolution: 144dpi)" srcset="img/main-city-desktop@2x.jpg">
-                  <source media="(min-width: 1200px) and (min-resolution: 1.5dppx)" srcset="img/main-city-desktop@2x.jpg">
+                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@2x.jpg">
                   <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
                   <source media="(min-width: 768px) and (min-resolution: 144dpi)" srcset="img/main-city-tablet@2x.jpg">
-                  <source media="(min-width: 768px) and (min-resolution: 1.5dppx)" srcset="img/main-city-tablet@2x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/main-city-tablet@2x.jpg">
                   <source media="(max-width: 767px) and (min-resolution: 144dpi)" srcset="img/main-city-mobile@2x.jpg">
-                  <source media="(max-width: 767px) and (min-resolution: 1.5dppx)" srcset="img/main-city-mobile@2x.jpg">
+                  <source media="(max-width: 767px)" srcset="img/main-city-mobile@2x.jpg">
                   <img class="index-main__image  index-main__image--first" src="img/main-city-mobile@1x.jpg" alt="#">
                 </picture>
               </div>
@@ -100,12 +100,12 @@
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
                   <source media="(min-width: 1200px) and (min-resolution: 144dpi)" srcset="img/main-bridge-desktop@2x.jpg">
-                  <source media="(min-width: 1200px) and (min-resolution: 1.5dppx)" srcset="img/main-bridge-desktop@2x.jpg">
+                  <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@2x.jpg">
                   <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
                   <source media="(min-width: 768px) and (min-resolution: 144dpi)" srcset="img/main-bridge-tablet@2x.jpg">
-                  <source media="(min-width: 768px) and (min-resolution: 1.5dppx)" srcset="img/main-bridge-tablet@2x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@2x.jpg">
                   <source media="(max-width: 767px) and (min-resolution: 144dpi)" srcset="img/main-bridge-mobile@2x.jpg">
-                  <source media="(max-width: 767px) and (min-resolution: 1.5dppx)" srcset="img/main-bridge-mobile@2x.jpg">
+                  <source media="(max-width: 767px)" srcset="img/main-bridge-mobile@2x.jpg">
                   <img class="index-main__image  index-main__image--bridge  index-main__image--second" src="img/main-bridge-mobile@1x.jpg" alt="#">
                 </picture>
               </div>
@@ -113,7 +113,7 @@
             <div class="wrapper  wrapper--index-content-third">
               <div class="index-main__reason  index-main__reason--third">
                 <h2 class="index-main__subtitle">Небольшая площадь</h2>
-                <p class="index-main__number">– №3 –</p>
+                <p class="index-main__number">– №3 –http://localhost:3000/</p>
                 <p class="index-main__subtext">Все&nbsp;интересные&nbsp;места находятся очень близко</p>
               </div>
               <div class="index-main__reason  index-main__reason--third">
@@ -132,12 +132,14 @@
         <section class="index-main__write">
           <b class="index-main__title">Заинтересовались?</b>
           <p class="index-main__text">Укажите предполагаемые даты поездки и&nbsp;мы&nbsp;покажем&nbsp;Вам&nbsp;лучшие предложения гостиниц в Седоне</p>
-          <a class="button  activity" href="#">
+          <a id="preventDefaulsItem" class="button  activity" href="#">
             <span class="activity__item">Найти гостиницу</span>
           </a>
         </section>
         <section class="index-main__map">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A962309820000ac2e6e9383516e228c0c0cce83d6f4d3b4f58067c3a092d2904b&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A962309820000ac2e6e9383516e228c0c0cce83d6f4d3b4f58067c3a092d2904b&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=false">
+            myMap.behaviors.disable('scrollZoom')
+          </script>
         </section>
       </main>
       <footer class="page-footer">
@@ -177,6 +179,7 @@
         </div>
       </footer>
       <script type="text/javascript" src="js/nav.js"></script>
+      <script type="text/javascript" src="js/preventdefault.js"></script>
     </div>
   </body>
 </html>

@@ -62,7 +62,7 @@ width: 100%;
     width: 320px;
     height: 27px;
     left: 0px;
-    bottom: 0px;
+    bottom: 11px;
     background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center;
     background-size: cover;
     z-index: 10;
@@ -149,8 +149,8 @@ width: 100%;
     overflow-y: hidden;
     &::after {
       width: 768px;
-      height: 62px;
-      bottom: -5px;
+      height: 65px;
+      bottom: -8px;
       background: url("../img/bg-intro-triangle-tablet.svg");
       background-size: contain;
     }

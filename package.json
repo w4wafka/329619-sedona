@@ -10,6 +10,11 @@
     "gulp-plumber": "1.1.x",
     "gulp-postcss": "7.0.x",
     "gulp-sass": "3.1.x",
+    "gulp-csso": "x.x.x",
+    "gulp-rename": "x.x.x",
+    "gulp-imagemin": "x.x.x",
+    "run-sequence": "x.x.x",
+    "del": "x.x.x",
     "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
@@ -18,8 +23,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp style",
-    "start": "gulp serve"
+    "build": "gulp build",
+    "start": "gulp build && gulp serve"
   },
   "browserslist": [
     "last 2 versions",
