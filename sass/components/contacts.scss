@@ -175,12 +175,18 @@
 
   .contacts__tel  .contacts__label::after {
    left: 342px;
-   top: -22px;
+   bottom: 0;
   }
 
   .contacts__tel  .contacts__label::before {
     left: 362px;
-    top: -2px;
+    bottom: 20px;
+  }
+
+  .contacts__label {
+    height: 54px;
+    box-sizing: border-box;
+    padding: 17px 0;
   }
 
   .contacts__tel .contacts__input {
@@ -191,7 +197,6 @@
 
   .contacts__tel .contacts__label {
     margin: 0 14px 0 0;
-    padding: 0;
   }
 
   .contacts__email {
@@ -202,12 +207,12 @@
 
   .contacts__email  .contacts__label::after {
     left: 422px;
-    top: -22px;
+    bottom: 0;
   }
 
   .contacts__email  .contacts__label::before {
     left: 442px;
-    top: 0px;
+    bottom: 20px;
   }
 
   .contacts__email .contacts__input {
@@ -218,7 +223,6 @@
 
   .contacts__email .contacts__label {
     margin: 0 17px 0 0;
-    padding: 0;
   }
 
   .contacts__hidden {
