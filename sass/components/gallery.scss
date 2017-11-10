@@ -17,6 +17,7 @@
 }
 
 .gallery__author {
+  background: transparent;
   display: inline-block;
   width: 100%;
   text-transform: none;
@@ -31,10 +32,15 @@
 }
 
 .gallery__photo-title {
+  background: transparent;
   display: inline-block;
   width: 100%;
   font-size: 14px;
   margin-bottom: 6px;
+}
+
+.gallery__container {
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -115,6 +121,7 @@
   .gallery__item  .gallery__container {
     width: 100%;
     padding: 10px 0 0;
+    left: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
     position: absolute;

@@ -39,7 +39,9 @@
 .page-footer__link .page-footer__image {
   position: absolute;
   transition: 0.2s;
-  right: -66px;
+  width: 46px;
+  height: 43px;
+  right: -72px;
   &:hover,
   &:focus {
     fill: #81b3d2;
@@ -69,8 +71,7 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     width: 1200px;
-    margin-top: -50px;
-    padding-top: 50px;
+    margin-top: 10px;
     background: #ffffff;
   }
 

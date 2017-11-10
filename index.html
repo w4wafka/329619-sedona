@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script async src="js/picturefill.js"></script>
   </head>
   <body>
     <div class="shadow-box">
@@ -29,8 +33,8 @@
         <div class="page-header__logo  logo">
           <a class="logo__link" href="#">Логотип</a>
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+            <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
             <img class="logo__item" src="img/logo-sedona-mobile.svg" alt="#">
           </picture>
           <button class="logo__burger-button">Открыть меню</button>
@@ -54,15 +58,19 @@
               </div>
               <div class="container">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
-                  <source media="(min-width: 1200px) and (min-resolution: 144dpi)" srcset="img/main-city-desktop@2x.jpg">
-                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@2x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
-                  <source media="(min-width: 768px) and (min-resolution: 144dpi)" srcset="img/main-city-tablet@2x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/main-city-tablet@2x.jpg">
-                  <source media="(max-width: 767px) and (min-resolution: 144dpi)" srcset="img/main-city-mobile@2x.jpg">
-                  <source media="(max-width: 767px)" srcset="img/main-city-mobile@2x.jpg">
-                  <img class="index-main__image  index-main__image--first" src="img/main-city-mobile@1x.jpg" alt="#">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="img/main-city-desktop@1x.jpg 1x,
+                            img/main-city-desktop@2x.jpg 2x">
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/main-city-tablet@1x.jpg 1x,
+                            img/main-city-tablet@2x.jpg 2x">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="img/main-city-mobile@1x.jpg 1x,
+                            img/main-city-mobile@2x.jpg 2x">
+                  <img class="index-main__image  index-main__image--city  index-main__image--first" src="img/main-city-mobile@1x.jpg" alt="#">
                 </picture>
               </div>
             </div>
@@ -98,14 +106,21 @@
               </div>
               <div class="container">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
-                  <source media="(min-width: 1200px) and (min-resolution: 144dpi)" srcset="img/main-bridge-desktop@2x.jpg">
-                  <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@2x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
-                  <source media="(min-width: 768px) and (min-resolution: 144dpi)" srcset="img/main-bridge-tablet@2x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@2x.jpg">
-                  <source media="(max-width: 767px) and (min-resolution: 144dpi)" srcset="img/main-bridge-mobile@2x.jpg">
-                  <source media="(max-width: 767px)" srcset="img/main-bridge-mobile@2x.jpg">
+                  <source
+                    type="image/jpg"
+                    media="(min-width: 1200px)"
+                    srcset="img/main-bridge-desktop@1x.jpg 1x,
+                            img/main-bridge-desktop@2x.jpg 2x">
+                  <source
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                    srcset="img/main-bridge-tablet@1x.jpg 1x,
+                            img/main-bridge-tablet@2x.jpg 2x">
+                  <source
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                    srcset="img/main-bridge-mobile@1x.jpg 1x,
+                            img/main-bridge-mobile@2x.jpg 2x">
                   <img class="index-main__image  index-main__image--bridge  index-main__image--second" src="img/main-bridge-mobile@1x.jpg" alt="#">
                 </picture>
               </div>
@@ -113,7 +128,7 @@
             <div class="wrapper  wrapper--index-content-third">
               <div class="index-main__reason  index-main__reason--third">
                 <h2 class="index-main__subtitle">Небольшая площадь</h2>
-                <p class="index-main__number">– №3 –http://localhost:3000/</p>
+                <p class="index-main__number">– №3 –</p>
                 <p class="index-main__subtext">Все&nbsp;интересные&nbsp;места находятся очень близко</p>
               </div>
               <div class="index-main__reason  index-main__reason--third">

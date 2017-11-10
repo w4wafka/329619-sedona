@@ -1,3 +1,7 @@
+.likes {
+  z-index: 100;
+}
+
 .likes__button {
   cursor: pointer;
   outline: none;
@@ -7,6 +11,7 @@
   display: inline-block;
   width: 33px;
   height: auto;
+  overflow: visible;
 }
 
 .likes__number {
@@ -33,16 +38,13 @@
 @media (min-width: $tablet-width) {
   .likes {
     position: absolute;
-    right: 30px;
+    width: 100px;
+    left: 235px;
     bottom: 30px;
   }
 
-  .gallery__item:nth-child(2n +1) .likes {
-    right: 35px;
-  }
-
   .gallery__item:first-child .likes {
-    right: 20px;
+  left: 560px;
   }
 
   .likes__icon {
@@ -52,7 +54,12 @@
 
 @media (min-width: $desktop-width) {
   .likes {
+    left: 307px;
     color: #ffffff;
+  }
+
+  .gallery__item:first-child .likes {
+  left: 1107px;
   }
 
   .likes__button {

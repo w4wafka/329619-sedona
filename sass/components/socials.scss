@@ -9,7 +9,8 @@
 .socials__item {
   position: relative;
   font-size: 0;
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 46px;
   height: 48px;
   background: $lblue;
@@ -17,27 +18,21 @@
 }
 
 .socials__icon {
-  position: absolute;
+  position: relative;
   fill: #ffffff;
   transition: 0.2s;
 }
 
 .socials__item--twitter .socials__icon {
   width: 18px;
-  top: 17px;
-  left: calc(50% - 7px);
 }
 
 .socials__item--facebook .socials__icon {
   width: 9px;
-  top: 14px;
-  left: calc(50% - 4px);
 }
 
 .socials__item--youtube .socials__icon {
   width: 20px;
-  top: 17px;
-  left: calc(50% - 10px);
 }
 
 .socials__item:active .socials__icon {
